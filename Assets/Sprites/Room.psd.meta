@@ -1,31 +1,22 @@
 fileFormatVersion: 2
-guid: b7518256d5f94fe438853bd157246cce
+guid: 8a97f09c6fcf21a49a7254155120524d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6287002357799567390
-    second: Door
+      213: 5435209892939362672
+    second: Room_0
   - first:
-      213: -8098584414283628997
-    second: ToiletBowl
+      213: 2911157161540883802
+    second: Room_1
   - first:
-      213: 7884417088873941565
-    second: ToiletPaper
+      213: 6117482753771828782
+    second: Room_2
   - first:
-      213: 6449939302943485873
-    second: PC
+      213: 2174312377745377809
+    second: Room_3
   - first:
-      213: -6327107731223078017
-    second: Bed
-  - first:
-      213: 4473492142677930137
-    second: Table
-  - first:
-      213: 3538440859420168923
-    second: Fridge
-  - first:
-      213: 1539459734083616205
-    second: ToiletPaperShelf
+      213: -8879904919334589422
+    second: Room_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -69,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 12
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,169 +113,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Door
+      name: Room_0
       rect:
         serializedVersion: 2
         x: 1
-        y: 35
-        width: 20
-        height: 34
+        y: 414
+        width: 97
+        height: 97
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 164b46b3cf20705449dea915cc1681cb
-      internalID: -6287002357799567390
+      spriteID: fc3a3c8d4ddd9d44aaec017e17db1757
+      internalID: 5435209892939362672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToiletBowl
+      name: Room_1
       rect:
         serializedVersion: 2
-        x: 22
-        y: 46
-        width: 16
-        height: 23
+        x: 99
+        y: 414
+        width: 97
+        height: 97
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2c2f8e74725902439396191ea6df579
-      internalID: -8098584414283628997
+      spriteID: 5086e38f665eb104bbef2c85e07e6de9
+      internalID: 2911157161540883802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToiletPaper
+      name: Room_2
       rect:
         serializedVersion: 2
-        x: 41
-        y: 64
-        width: 4
-        height: 5
+        x: 197
+        y: 414
+        width: 97
+        height: 97
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca301de4051b9c0498ceaae9d6dc00de
-      internalID: 7884417088873941565
+      spriteID: 1f3c16330f975d64796a2869462df5ff
+      internalID: 6117482753771828782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC
+      name: Room_3
       rect:
         serializedVersion: 2
-        x: 66
-        y: 51
-        width: 26
-        height: 18
+        x: 298
+        y: 442
+        width: 34
+        height: 68
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e404e11ecaad39e4ab3703a2747b3d30
-      internalID: 6449939302943485873
+      spriteID: e224b40432d0fb94aa32e648b8f3d5da
+      internalID: 2174312377745377809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bed
+      name: Room_4
       rect:
         serializedVersion: 2
-        x: 23
-        y: 1
-        width: 27
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8688ed2995c29434aa7352cc34ae6f18
-      internalID: -6327107731223078017
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Table
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 30
-        width: 37
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc65a10f5e2441049bb9680e0fcedc67
-      internalID: 4473492142677930137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fridge
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 1
-        width: 15
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9997a0c2340a9334d914f84e68d6f76f
-      internalID: 3538440859420168923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToiletPaperShelf
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 63
+        x: 333
+        y: 424
         width: 6
-        height: 1
+        height: 77
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2d319fa1d33942499db51d39e493d7c
-      internalID: 1539459734083616205
+      spriteID: ef0e9cb29f23cab41babafd5649fdb2e
+      internalID: -8879904919334589422
       vertices: []
       indices: 
       edges: []
