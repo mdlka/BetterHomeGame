@@ -19,10 +19,19 @@ TextureImporter:
     second: Room_4
   - first:
       213: -4726841367925293375
-    second: Room_5
+    second: DoorwayLeftB
   - first:
       213: -8593993773648720178
-    second: Room_6
+    second: DoorwayLeftT
+  - first:
+      213: 8715371496779132213
+    second: BG
+  - first:
+      213: -7962479808614384427
+    second: DoorwayRightT
+  - first:
+      213: -5281889754910470168
+    second: DoorwayRightB
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -83,9 +92,9 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
+    textureFormat: 4
+    textureCompression: 3
+    compressionQuality: 100
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -95,9 +104,9 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
+    textureFormat: 4
+    textureCompression: 3
+    compressionQuality: 100
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -107,9 +116,9 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
+    textureFormat: 4
+    textureCompression: 3
+    compressionQuality: 100
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -123,17 +132,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 14
+        y: 130
         width: 97
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d5b6406bddb7b34f8733fa9e2748e30
+      spriteID: 067a4338f33ef7847a9045fd04aec040
       internalID: 5435209892939362672
       vertices: []
       indices: 
@@ -144,17 +153,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 99
-        y: 14
+        y: 130
         width: 97
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7b84fab6e10e7346b1a42ca9d27cd53
+      spriteID: 6a4ac480b4d47284fb89ca4b5648cb83
       internalID: 2911157161540883802
       vertices: []
       indices: 
@@ -165,17 +174,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 197
-        y: 14
+        y: 130
         width: 97
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3030e7b20b64406489b023ff4f5f6a3e
+      spriteID: 28f6318bad601984d94c155b423586d8
       internalID: 6117482753771828782
       vertices: []
       indices: 
@@ -185,18 +194,18 @@ TextureImporter:
       name: Room_3
       rect:
         serializedVersion: 2
-        x: 305
-        y: 14
+        x: 295
+        y: 141
         width: 34
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b38417915da22e74f836c59420a74ede
+      spriteID: 4ed0fb9d78f8a2947ba57aa249478e1a
       internalID: 2174312377745377809
       vertices: []
       indices: 
@@ -206,19 +215,124 @@ TextureImporter:
       name: Room_4
       rect:
         serializedVersion: 2
-        x: 342
-        y: 14
+        x: 330
+        y: 146
         width: 12
-        height: 63
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb2e5e4d408235b46b184aad8997dcb4
+      spriteID: 0c2d710c606e3d846b3cb2edda6bb8f1
       internalID: -8879904919334589422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoorwayLeftB
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 14
+        width: 34
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41813eefc382d2e46a3b3ff62835be4b
+      internalID: -4726841367925293375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoorwayLeftT
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 14
+        width: 12
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a50aef9996ca74eba9a5b84cc25eae
+      internalID: -8593993773648720178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 14
+        width: 97
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7e57b58d83e2445a76367ae1331c07
+      internalID: 8715371496779132213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoorwayRightT
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 11
+        width: 12
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780833b438e154442b2a0f68c7bd687a
+      internalID: -7962479808614384427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoorwayRightB
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 11
+        width: 34
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2bbf742b1c0363438955543fa89078a
+      internalID: -5281889754910470168
       vertices: []
       indices: 
       edges: []
