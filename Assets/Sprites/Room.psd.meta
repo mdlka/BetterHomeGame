@@ -17,6 +17,12 @@ TextureImporter:
   - first:
       213: -8879904919334589422
     second: Room_4
+  - first:
+      213: -4726841367925293375
+    second: Room_5
+  - first:
+      213: -8593993773648720178
+    second: Room_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -117,7 +123,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 414
+        y: 14
         width: 97
         height: 97
       alignment: 0
@@ -127,7 +133,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc3a3c8d4ddd9d44aaec017e17db1757
+      spriteID: 4d5b6406bddb7b34f8733fa9e2748e30
       internalID: 5435209892939362672
       vertices: []
       indices: 
@@ -138,7 +144,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 99
-        y: 414
+        y: 14
         width: 97
         height: 97
       alignment: 0
@@ -148,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5086e38f665eb104bbef2c85e07e6de9
+      spriteID: e7b84fab6e10e7346b1a42ca9d27cd53
       internalID: 2911157161540883802
       vertices: []
       indices: 
@@ -159,7 +165,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 197
-        y: 414
+        y: 14
         width: 97
         height: 97
       alignment: 0
@@ -169,7 +175,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f3c16330f975d64796a2869462df5ff
+      spriteID: 3030e7b20b64406489b023ff4f5f6a3e
       internalID: 6117482753771828782
       vertices: []
       indices: 
@@ -179,10 +185,10 @@ TextureImporter:
       name: Room_3
       rect:
         serializedVersion: 2
-        x: 298
-        y: 442
+        x: 305
+        y: 14
         width: 34
-        height: 68
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,7 +196,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e224b40432d0fb94aa32e648b8f3d5da
+      spriteID: b38417915da22e74f836c59420a74ede
       internalID: 2174312377745377809
       vertices: []
       indices: 
@@ -200,10 +206,10 @@ TextureImporter:
       name: Room_4
       rect:
         serializedVersion: 2
-        x: 333
-        y: 424
-        width: 6
-        height: 77
+        x: 342
+        y: 14
+        width: 12
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,7 +217,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef0e9cb29f23cab41babafd5649fdb2e
+      spriteID: cb2e5e4d408235b46b184aad8997dcb4
       internalID: -8879904919334589422
       vertices: []
       indices: 
