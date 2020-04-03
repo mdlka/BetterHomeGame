@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    [SerializeField][Range(0, 10)] private float _speed;
+    [SerializeField] [Range(0, 10)] private float _speed;
     [SerializeField] private Animator _animator;
 
     private float _horizontalMove;
@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Flip();
         }
-        else if(_horizontalMove < 0 && _facingRight)
+        else if (_horizontalMove < 0 && _facingRight)
         {
             Flip();
         }
