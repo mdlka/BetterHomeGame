@@ -32,6 +32,24 @@ TextureImporter:
   - first:
       213: -5281889754910470168
     second: DoorwayRightB
+  - first:
+      213: -4726841367925293375
+    second: Room_5
+  - first:
+      213: -8593993773648720178
+    second: Room_6
+  - first:
+      213: 8715371496779132213
+    second: Room_7
+  - first:
+      213: -7962479808614384427
+    second: Room_8
+  - first:
+      213: -5281889754910470168
+    second: Room_9
+  - first:
+      213: 5937771471627406088
+    second: Room_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -142,7 +160,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 067a4338f33ef7847a9045fd04aec040
+      spriteID: 6ed001e1eb976094fb215cd434e990bf
       internalID: 5435209892939362672
       vertices: []
       indices: 
@@ -163,7 +181,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a4ac480b4d47284fb89ca4b5648cb83
+      spriteID: edcbebbbff62ecd4e9734c3bf59e7e06
       internalID: 2911157161540883802
       vertices: []
       indices: 
@@ -184,7 +202,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28f6318bad601984d94c155b423586d8
+      spriteID: 69ad9d2a0a115c240973bf59119ab1ca
       internalID: 6117482753771828782
       vertices: []
       indices: 
@@ -205,7 +223,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ed0fb9d78f8a2947ba57aa249478e1a
+      spriteID: 28cc0f4e59fb4bc4d9e116fe2548447e
       internalID: 2174312377745377809
       vertices: []
       indices: 
@@ -226,19 +244,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c2d710c606e3d846b3cb2edda6bb8f1
+      spriteID: 3954bbed66731a64bb5bff7757f57cf0
       internalID: -8879904919334589422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoorwayLeftB
+      name: Room_5
       rect:
         serializedVersion: 2
-        x: 61
+        x: 1
         y: 14
-        width: 34
+        width: 684
         height: 97
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -247,18 +265,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41813eefc382d2e46a3b3ff62835be4b
+      spriteID: 4ad75dc2d91a52249be5311ab377e529
       internalID: -4726841367925293375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoorwayLeftT
+      name: Room_6
       rect:
         serializedVersion: 2
-        x: 96
-        y: 14
+        x: 343
+        y: 146
         width: 12
         height: 64
       alignment: 0
@@ -268,39 +286,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33a50aef9996ca74eba9a5b84cc25eae
+      spriteID: f129f877cf2d9424e961f1c23bb1c6e9
       internalID: -8593993773648720178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BG
+      name: Room_7
       rect:
         serializedVersion: 2
-        x: 109
-        y: 14
-        width: 97
-        height: 97
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a7e57b58d83e2445a76367ae1331c07
-      internalID: 8715371496779132213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorwayRightT
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 11
+        x: 356
+        y: 146
         width: 12
         height: 64
       alignment: 0
@@ -310,20 +307,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 780833b438e154442b2a0f68c7bd687a
-      internalID: -7962479808614384427
+      spriteID: e0e995d776ea5e747a280f4c56920abf
+      internalID: 8715371496779132213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoorwayRightB
+      name: Room_8
       rect:
         serializedVersion: 2
-        x: 220
-        y: 11
-        width: 34
-        height: 97
+        x: 369
+        y: 146
+        width: 12
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,8 +328,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2bbf742b1c0363438955543fa89078a
-      internalID: -5281889754910470168
+      spriteID: 882f3b3b43ec90d43872b143b77d4f82
+      internalID: -7962479808614384427
       vertices: []
       indices: 
       edges: []
