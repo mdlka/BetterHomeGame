@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12965c7ce388b2043bad14f5a78878c2, type: 3}
-  m_Name: Rice
+  m_Script: {fileID: 11500000, guid: c56fd903af6e48849ab620d653b2a886, type: 3}
+  m_Name: Energy
   m_EditorClassIdentifier: 
-  _name: "\u0420\u0438\u0441"
-  _health: 0.1
-  _energy: 0.1
-  _food: 0.3
-  _price: 120
-  _uiIcon: {fileID: 6449939302943485873, guid: b7518256d5f94fe438853bd157246cce, type: 3}
+  _name: Energy
+  _value: 0
+  _icon: {fileID: 0}

@@ -26,6 +26,7 @@ public class Fridge : MonoBehaviour
             cell.Render(food);
 
             cell.Eating += () => Destroy(cell.gameObject);
+            cell.Eating += () => Debug.Log(food.Description);
         });
     }
 }
