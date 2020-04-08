@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Energy
   m_EditorClassIdentifier: 
   _name: Energy
-  _value: 0
-  _icon: {fileID: 0}
+  _value: 0.95000005
+  _icon: {fileID: -8867450297687433616, guid: d43a0167f09037c4493fb746969a6c5d, type: 3}

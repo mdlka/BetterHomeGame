@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Health
   m_EditorClassIdentifier: 
   _name: Health
-  _value: 0
-  _icon: {fileID: 0}
+  _value: 0.7800003
+  _icon: {fileID: 2149548291114309329, guid: d43a0167f09037c4493fb746969a6c5d, type: 3}

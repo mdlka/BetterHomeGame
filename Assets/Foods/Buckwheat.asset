@@ -12,12 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12965c7ce388b2043bad14f5a78878c2, type: 3}
   m_Name: Buckwheat
   m_EditorClassIdentifier: 
-  _uiIcon: {fileID: -6327107731223078017, guid: b7518256d5f94fe438853bd157246cce,
-    type: 3}
+  _uiIcon: {fileID: 6887473477851677431, guid: f4e7e4e00752d584d89f6950aaf5f396, type: 3}
   _name: "\u0413\u0440\u0435\u0447\u043A\u0430"
   _health: 0.1
   _energy: 0.1
   _food: 0.2
+  _happy: 0
   _price: 100
-  _description: "\u0417\u0434\u043E\u0440\u043E\u0432\u044C\u0435 +10\n\u042D\u043D\u0435\u0440\u0433\u0438\u044F
-    +10\n\u0421\u044B\u0442\u043E\u0441\u0442\u044C +20"

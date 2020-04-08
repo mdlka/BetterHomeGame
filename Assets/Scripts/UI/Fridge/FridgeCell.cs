@@ -17,13 +17,8 @@ public class FridgeCell : MonoBehaviour, IPointerClickHandler
         _iconField.sprite = food.UIIcon;
     }
 
-    private void Eat()
-    {
-        Eating?.Invoke();
-    }
-
     public void OnPointerClick(PointerEventData eventData)
     {
-        Eat();
+        Eating?.Invoke();
     }
 }

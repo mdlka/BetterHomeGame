@@ -7,6 +7,7 @@ public class Fridge : MonoBehaviour
     [SerializeField] private List<AssetFood> Foods;
     [SerializeField] private FridgeCell _fridgeCellTemplate;
     [SerializeField] private Transform _container;
+    [SerializeField] private EatFood _eatFood;
 
     public void OnEnable()
     {
@@ -25,8 +26,10 @@ public class Fridge : MonoBehaviour
             FridgeCell cell = Instantiate(_fridgeCellTemplate, _container);
             cell.Render(food);
 
+            cell.gameObject.name = food.Name;
+
             cell.Eating += () => Destroy(cell.gameObject);
-            cell.Eating += () => Debug.Log(food.Description);
+            cell.Eating += () => _eatFood.Eat(food.Health, food.Energy, food.Food, food.Happy);
         });
     }
 }

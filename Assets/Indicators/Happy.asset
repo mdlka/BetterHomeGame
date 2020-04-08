@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Happy
   m_EditorClassIdentifier: 
   _name: Happy
-  _value: 0
-  _icon: {fileID: 0}
+  _value: 0.6800003
+  _icon: {fileID: 7554746076046358547, guid: d43a0167f09037c4493fb746969a6c5d, type: 3}

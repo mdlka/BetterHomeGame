@@ -7,16 +7,16 @@ public class IndicatorsUIView : MonoBehaviour
 {
     [SerializeField] private Indicator _indicator;
     [SerializeField] private Scrollbar _scrollBar;
-    [SerializeField] private Text _text;
+    [SerializeField] private Text _value;
     [SerializeField] private Image _sprite;
 
     private void OnEnable()
     {
         _indicator.Chanded += OnIndicatorChanged;
 
-        _sprite = _indicator.Icon;
+        _sprite.sprite = _indicator.Icon;
 
-        OnIndicatorChanged(_scrollBar.size);
+        OnIndicatorChanged(_indicator.Value);
     }
 
     private void OnDisable()
@@ -27,7 +27,7 @@ public class IndicatorsUIView : MonoBehaviour
     private void OnIndicatorChanged(float value)
     {
         _scrollBar.size = value;
-        _text.text = (value*100).ToString();
+        _value.text = string.Format("{0:0}%", value * 100);
     }
 
 }

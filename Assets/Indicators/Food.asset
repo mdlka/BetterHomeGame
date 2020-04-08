@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Food
   m_EditorClassIdentifier: 
   _name: Food
-  _value: 0
-  _icon: {fileID: 0}
+  _value: 0.19000022
+  _icon: {fileID: 504186743117946935, guid: d43a0167f09037c4493fb746969a6c5d, type: 3}

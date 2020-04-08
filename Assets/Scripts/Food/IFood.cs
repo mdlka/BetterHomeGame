@@ -7,6 +7,6 @@ public interface IFood
     float Health { get; }
     float Energy { get; }
     float Food { get; }
+    float Happy { get; }
     int Price { get; }
-    string Description { get; }
 }

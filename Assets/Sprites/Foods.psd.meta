@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: d43a0167f09037c4493fb746969a6c5d
+guid: f4e7e4e00752d584d89f6950aaf5f396
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2149548291114309329
-    second: HealthIcon
+      213: -7077578495685720143
+    second: Water
   - first:
-      213: -8867450297687433616
-    second: EnergyIcon
+      213: -992979993971346394
+    second: EnergyDrink
   - first:
-      213: 504186743117946935
-    second: FoodIcon
+      213: -2315512106566519955
+    second: Pizza
   - first:
-      213: 7554746076046358547
-    second: HappyIcon
+      213: 6887473477851677431
+    second: Buckwheat
   - first:
-      213: -3380987159177692420
-    second: MoneyIcon
+      213: 7673594839502701706
+    second: Rice
+  - first:
+      213: 2359628389229301742
+    second: Foods_5
+  - first:
+      213: 6926616686844706316
+    second: Foods_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -60,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -77,7 +83,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -89,7 +95,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -101,7 +107,7 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HealthIcon
+      name: Water
       rect:
         serializedVersion: 2
         x: 1
-        y: 37
-        width: 14
-        height: 12
+        y: 210
+        width: 44
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0e45ea345b4d664abc154ddecf994e2
-      internalID: 2149548291114309329
+      spriteID: fa37cbc03e66ec34197707c41ed7a06f
+      internalID: -7077578495685720143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnergyIcon
+      name: EnergyDrink
       rect:
         serializedVersion: 2
-        x: 16
-        y: 33
-        width: 12
-        height: 16
+        x: 48
+        y: 220
+        width: 35
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8140c9f315966f542b3cd5d9c63ee17e
-      internalID: -8867450297687433616
+      spriteID: 3fcaac51e72e5a24f9c57674a74e49b6
+      internalID: -992979993971346394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FoodIcon
+      name: Pizza
       rect:
         serializedVersion: 2
-        x: 29
-        y: 37
-        width: 13
-        height: 12
+        x: 86
+        y: 204
+        width: 51
+        height: 51
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da8baa703e4af804fb7767c10eb437f0
-      internalID: 504186743117946935
+      spriteID: d47127e4aeb97ce41a29a9eea1c0313a
+      internalID: -2315512106566519955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HappyIcon
+      name: Buckwheat
       rect:
         serializedVersion: 2
-        x: 43
-        y: 34
-        width: 15
-        height: 15
+        x: 140
+        y: 198
+        width: 57
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae453a4b86138fc42a652014f2449e2a
-      internalID: 7554746076046358547
+      spriteID: ecb28c2f31da9264b90fb206646793c2
+      internalID: 6887473477851677431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MoneyIcon
+      name: Rice
       rect:
         serializedVersion: 2
-        x: 59
-        y: 35
-        width: 7
-        height: 13
+        x: 140
+        y: 138
+        width: 57
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,8 +217,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7071149dc1d16b243822730ae6334d6b
-      internalID: -3380987159177692420
+      spriteID: 0f0e94c60b1915143ad4356058d692af
+      internalID: 7673594839502701706
       vertices: []
       indices: 
       edges: []
