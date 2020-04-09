@@ -1,6 +1,7 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Fridge : MonoBehaviour
 {
@@ -28,8 +29,25 @@ public class Fridge : MonoBehaviour
 
             cell.gameObject.name = food.Name;
 
+            Sort(_container);
+
             cell.Eating += () => Destroy(cell.gameObject);
             cell.Eating += () => _eatFood.Eat(food.Health, food.Energy, food.Food, food.Happy);
         });
+    }
+
+    private void Sort(Transform container)
+    {
+        List<Transform> children = container.GetComponentInChildren<Transform>(true).Cast<Transform>().ToList();
+
+        children.Sort((Transform t1, Transform t2) => 
+        {
+            return t1.name.CompareTo(t2.name);
+        });
+
+        for (int i = 0; i < children.Count; ++i)
+        {
+            children[i].SetSiblingIndex(i);
+        }
     }
 }

@@ -17,12 +17,6 @@ public class Indicator : ScriptableObject
     public float Value => _value;
     public Sprite Icon => _icon;
 
-    [ContextMenu("Fire Changed Event")]
-    private void ForceFireChangedEvent()
-    {
-        Chanded?.Invoke(_value);
-    }
-
     private void UpdateIndicatorValue()
     {
         Chanded?.Invoke(_value);
