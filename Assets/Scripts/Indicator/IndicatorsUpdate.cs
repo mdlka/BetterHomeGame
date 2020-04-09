@@ -6,6 +6,7 @@ public class IndicatorsUpdate : MonoBehaviour
 {
     [SerializeField] private Indicator[] _indicators;
     [SerializeField] [Range(0f, 0.1f)] private float _value;
+    [SerializeField] [Range(0, 5)] private int _timeUpdate;
 
     private void Awake()
     {
@@ -19,7 +20,7 @@ public class IndicatorsUpdate : MonoBehaviour
     {
         indicator.SetValue(indicator.Value - value);
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(_timeUpdate);
 
         if (indicator.Value > 0f)
             StartCoroutine(DecreasingIndicatorValue(indicator, value));

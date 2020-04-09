@@ -36,6 +36,14 @@ public class Fridge : MonoBehaviour
         });
     }
 
+    public void AddFood(AssetFood food)
+    {
+        if(Foods.Count < 16)
+        {
+            Foods.Add(food);
+        }
+    }
+
     private void Sort(Transform container)
     {
         List<Transform> children = container.GetComponentInChildren<Transform>(true).Cast<Transform>().ToList();

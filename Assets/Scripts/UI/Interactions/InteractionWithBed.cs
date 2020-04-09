@@ -3,10 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Bed : MonoBehaviour
+public class InteractionWithBed : MonoBehaviour
 {
+    [SerializeField] private GameObject _bedButton;
     [SerializeField] private Image _curtain;
     [SerializeField] private IndicatorsChange _indicatorsChange;
+
+    private void Awake()
+    {
+        if (_bedButton.activeSelf) _bedButton.SetActive(false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Player player = collision.GetComponent<Player>();
+
+        if (player != null)
+        {
+            _bedButton.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        _bedButton.SetActive(false);
+    }
 
     public void Sleep()
     {
@@ -41,7 +62,7 @@ public class Bed : MonoBehaviour
         if (_curtain.color.a > 0) StartCoroutine(Lighting());
         else
         {
-            _curtain.gameObject.SetActive(false); 
+            _curtain.gameObject.SetActive(false);
         }
     }
 }

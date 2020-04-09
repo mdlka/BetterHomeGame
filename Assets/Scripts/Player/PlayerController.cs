@@ -44,4 +44,14 @@ public class PlayerController : MonoBehaviour
         _facingRight = !_facingRight;
         transform.Rotate(0f, 180f, 0f);
     }
+
+    public bool GetFacingRight()
+    {
+        return _facingRight;
+    }
+
+    public float GetSpeed()
+    {
+        return _horizontalMove;
+    }
 }
