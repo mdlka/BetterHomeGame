@@ -1,28 +1,37 @@
 fileFormatVersion: 2
-guid: f4e7e4e00752d584d89f6950aaf5f396
+guid: 85bd278f7ee879f48b0f37f872078835
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7077578495685720143
-    second: Water
+      213: -6287002357799567390
+    second: Door
   - first:
-      213: -992979993971346394
-    second: EnergyDrink
+      213: -8098584414283628997
+    second: ToiletBowl
   - first:
-      213: -2315512106566519955
-    second: Pizza
+      213: -488721925442295091
+    second: ToiletPaper
   - first:
-      213: 6887473477851677431
-    second: Buckwheat
+      213: -7573354855677281409
+    second: PC
   - first:
-      213: 7673594839502701706
-    second: Rice
+      213: 1801263428120863714
+    second: Items_4
   - first:
-      213: 2359628389229301742
-    second: Foods_5
+      213: -5971942374765049077
+    second: Items_5
   - first:
-      213: 6926616686844706316
-    second: Foods_6
+      213: 4639506938558671751
+    second: Fridge
+  - first:
+      213: -6099050445329199328
+    second: Table
+  - first:
+      213: -7855203551248514480
+    second: Bed
+  - first:
+      213: 1734089330981326749
+    second: ToiletPaperShelf
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -66,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 25
+  spritePixelsToUnits: 12
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Water
+      name: Door
       rect:
         serializedVersion: 2
         x: 1
-        y: 210
-        width: 44
-        height: 45
+        y: 36
+        width: 20
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +142,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa37cbc03e66ec34197707c41ed7a06f
-      internalID: -7077578495685720143
+      spriteID: ef6b50194d0e0ed47a00ed007168279a
+      internalID: -6287002357799567390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnergyDrink
+      name: ToiletBowl
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 47
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d0a61d7564e6d4eaa788a588c324ae
+      internalID: -8098584414283628997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToiletPaper
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 65
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fa202e68de57847b7a1c78e1974cd2
+      internalID: -488721925442295091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC
       rect:
         serializedVersion: 2
         x: 48
-        y: 220
-        width: 35
-        height: 35
+        y: 52
+        width: 26
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fcaac51e72e5a24f9c57674a74e49b6
-      internalID: -992979993971346394
+      spriteID: 62bc6eae1f30d0643a8a637b99a7a245
+      internalID: -7573354855677281409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pizza
+      name: Fridge
       rect:
         serializedVersion: 2
-        x: 86
-        y: 204
-        width: 51
-        height: 51
+        x: 3
+        y: 2
+        width: 15
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d47127e4aeb97ce41a29a9eea1c0313a
-      internalID: -2315512106566519955
+      spriteID: e4a833835c5991a49a67e90d177e3b22
+      internalID: 4639506938558671751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Buckwheat
+      name: Table
       rect:
         serializedVersion: 2
-        x: 140
-        y: 198
-        width: 57
-        height: 57
+        x: 22
+        y: 24
+        width: 37
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecb28c2f31da9264b90fb206646793c2
-      internalID: 6887473477851677431
+      spriteID: e37879aace5ceb64dae0ab13a2bb6a12
+      internalID: -6099050445329199328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rice
+      name: Bed
       rect:
         serializedVersion: 2
-        x: 140
-        y: 138
-        width: 57
-        height: 57
+        x: 19
+        y: 2
+        width: 45
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,8 +268,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f0e94c60b1915143ad4356058d692af
-      internalID: 7673594839502701706
+      spriteID: 9a2732132aa466c41b5f2587c1a38e04
+      internalID: -7855203551248514480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToiletPaperShelf
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 64
+        width: 6
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628bbe063b6939a48a09cf34d98f306e
+      internalID: 1734089330981326749
       vertices: []
       indices: 
       edges: []
@@ -235,7 +307,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

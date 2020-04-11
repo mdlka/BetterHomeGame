@@ -1,21 +1,21 @@
 fileFormatVersion: 2
-guid: d43a0167f09037c4493fb746969a6c5d
+guid: 4311843e1e9c5e84ca70bdb84295290b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2149548291114309329
+      213: 3070148713985423590
     second: HealthIcon
   - first:
-      213: -8867450297687433616
+      213: -7404273912201274490
     second: EnergyIcon
   - first:
-      213: 504186743117946935
+      213: -7798774717832287345
     second: FoodIcon
   - first:
-      213: 7554746076046358547
+      213: 4458593027102674584
     second: HappyIcon
   - first:
-      213: -3380987159177692420
+      213: 8500124053427680401
     second: MoneyIcon
   externalObjects: {}
   serializedVersion: 10
@@ -77,7 +77,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -89,7 +89,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -101,7 +101,7 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -117,7 +117,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 37
+        y: 6
         width: 14
         height: 12
       alignment: 0
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0e45ea345b4d664abc154ddecf994e2
-      internalID: 2149548291114309329
+      spriteID: c5f402e80f76c584b93a4b57779fcf22
+      internalID: 3070148713985423590
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 33
+        y: 2
         width: 12
         height: 16
       alignment: 0
@@ -148,8 +148,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8140c9f315966f542b3cd5d9c63ee17e
-      internalID: -8867450297687433616
+      spriteID: 20bce169386beb04d92bf9ab9f099722
+      internalID: -7404273912201274490
       vertices: []
       indices: 
       edges: []
@@ -159,7 +159,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 29
-        y: 37
+        y: 6
         width: 13
         height: 12
       alignment: 0
@@ -169,8 +169,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da8baa703e4af804fb7767c10eb437f0
-      internalID: 504186743117946935
+      spriteID: b06ae207dd4a47745adf5988dbd173fe
+      internalID: -7798774717832287345
       vertices: []
       indices: 
       edges: []
@@ -180,7 +180,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 43
-        y: 34
+        y: 3
         width: 15
         height: 15
       alignment: 0
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae453a4b86138fc42a652014f2449e2a
-      internalID: 7554746076046358547
+      spriteID: a05b4beb261dcf745998eaab1e3944b6
+      internalID: 4458593027102674584
       vertices: []
       indices: 
       edges: []
@@ -201,7 +201,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 59
-        y: 35
+        y: 4
         width: 7
         height: 13
       alignment: 0
@@ -211,8 +211,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7071149dc1d16b243822730ae6334d6b
-      internalID: -3380987159177692420
+      spriteID: 5c5f033db13a0df4f8d1f86f982f950d
+      internalID: 8500124053427680401
       vertices: []
       indices: 
       edges: []
@@ -229,7 +229,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -1,55 +1,19 @@
 fileFormatVersion: 2
-guid: 8a97f09c6fcf21a49a7254155120524d
+guid: c086b98334ced8e4f921f288a579319f
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 5435209892939362672
-    second: Room_0
+    second: Rooms
   - first:
       213: 2911157161540883802
-    second: Room_1
+    second: DoorwayT1
   - first:
       213: 6117482753771828782
-    second: Room_2
+    second: DoorwayT2
   - first:
       213: 2174312377745377809
-    second: Room_3
-  - first:
-      213: -8879904919334589422
-    second: Room_4
-  - first:
-      213: -4726841367925293375
-    second: DoorwayLeftB
-  - first:
-      213: -8593993773648720178
-    second: DoorwayLeftT
-  - first:
-      213: 8715371496779132213
-    second: BG
-  - first:
-      213: -7962479808614384427
-    second: DoorwayRightT
-  - first:
-      213: -5281889754910470168
-    second: DoorwayRightB
-  - first:
-      213: -4726841367925293375
-    second: Room_5
-  - first:
-      213: -8593993773648720178
-    second: Room_6
-  - first:
-      213: 8715371496779132213
-    second: Room_7
-  - first:
-      213: -7962479808614384427
-    second: Room_8
-  - first:
-      213: -5281889754910470168
-    second: Room_9
-  - first:
-      213: 5937771471627406088
-    second: Room_10
+    second: DoorwayT3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -111,8 +75,8 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 3
-    compressionQuality: 100
+    textureCompression: 1
+    compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -123,8 +87,8 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 3
-    compressionQuality: 100
+    textureCompression: 1
+    compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -135,8 +99,8 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 3
-    compressionQuality: 100
+    textureCompression: 1
+    compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -146,116 +110,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Room_0
+      name: Rooms
       rect:
         serializedVersion: 2
-        x: 1
-        y: 130
-        width: 97
-        height: 97
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ed001e1eb976094fb215cd434e990bf
-      internalID: 5435209892939362672
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Room_1
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 130
-        width: 97
-        height: 97
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edcbebbbff62ecd4e9734c3bf59e7e06
-      internalID: 2911157161540883802
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Room_2
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 130
-        width: 97
-        height: 97
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69ad9d2a0a115c240973bf59119ab1ca
-      internalID: 6117482753771828782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Room_3
-      rect:
-        serializedVersion: 2
-        x: 295
-        y: 141
-        width: 34
-        height: 74
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28cc0f4e59fb4bc4d9e116fe2548447e
-      internalID: 2174312377745377809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Room_4
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 146
-        width: 12
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3954bbed66731a64bb5bff7757f57cf0
-      internalID: -8879904919334589422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Room_5
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 14
+        x: 2
+        y: 4
         width: 684
         height: 97
       alignment: 0
@@ -265,18 +124,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ad75dc2d91a52249be5311ab377e529
-      internalID: -4726841367925293375
+      spriteID: 48eaab250f72a1d46a271b963c0dc9b3
+      internalID: 5435209892939362672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Room_6
+      name: DoorwayT1
       rect:
         serializedVersion: 2
-        x: 343
-        y: 146
+        x: 687
+        y: 20
         width: 12
         height: 64
       alignment: 0
@@ -286,18 +145,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f129f877cf2d9424e961f1c23bb1c6e9
-      internalID: -8593993773648720178
+      spriteID: de1d7669fe4f1e74f8eafce70b3b1826
+      internalID: 2911157161540883802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Room_7
+      name: DoorwayT2
       rect:
         serializedVersion: 2
-        x: 356
-        y: 146
+        x: 700
+        y: 20
         width: 12
         height: 64
       alignment: 0
@@ -307,18 +166,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0e995d776ea5e747a280f4c56920abf
-      internalID: 8715371496779132213
+      spriteID: 10bba6baae2467c4399eb23a9ecc353d
+      internalID: 6117482753771828782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Room_8
+      name: DoorwayT3
       rect:
         serializedVersion: 2
-        x: 369
-        y: 146
+        x: 713
+        y: 20
         width: 12
         height: 64
       alignment: 0
@@ -328,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 882f3b3b43ec90d43872b143b77d4f82
-      internalID: -7962479808614384427
+      spriteID: b950d5f24e0043541be370655c6dc148
+      internalID: 2174312377745377809
       vertices: []
       indices: 
       edges: []
@@ -346,7 +205,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

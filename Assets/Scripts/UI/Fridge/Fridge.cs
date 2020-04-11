@@ -32,16 +32,20 @@ public class Fridge : MonoBehaviour
             Sort(_container);
 
             cell.Eating += () => Destroy(cell.gameObject);
+            cell.Eating += () => foods.Remove(food);
             cell.Eating += () => _eatFood.Eat(food.Health, food.Energy, food.Food, food.Happy);
         });
     }
 
-    public void AddFood(AssetFood food)
+    public bool AddFood(AssetFood food)
     {
         if(Foods.Count < 16)
         {
             Foods.Add(food);
+            return true;
         }
+
+        return false;
     }
 
     private void Sort(Transform container)

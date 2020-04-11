@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: fb673c09f809d3541be7fb958bf3ac79
+guid: d50f70b15f01ec44f8937ff00ef797e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2634799857069279492
-    second: Head
+      213: -7710477994757419862
+    second: HallwayPicture
   - first:
-      213: 8188619567538790795
-    second: FrontArmT
+      213: 8329495169197411303
+    second: Washer
   - first:
-      213: 83177210387533205
-    second: Body
+      213: 1672307380471688160
+    second: BathStand
   - first:
-      213: 5616473621025577943
-    second: BackArmT
+      213: -8333136225655696058
+    second: Bath
   - first:
-      213: -3861189876761057223
-    second: FrontArmB
+      213: 5170668725656063308
+    second: KitchenStand
   - first:
-      213: -6387108288716491438
-    second: FrontLegT
+      213: -9010231408641539952
+    second: KitchenStove
   - first:
-      213: -4107915411609040553
-    second: BacktLegT
+      213: -4485526773934184874
+    second: KitchenPicture
   - first:
-      213: -6281386854765781268
-    second: FrontLegB
-  - first:
-      213: 7152468569670892075
-    second: BackLegB
-  - first:
-      213: 4970282627068225992
-    second: BackArmB
+      213: -2801218345252212256
+    second: Wardrobe
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -75,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -92,7 +86,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -104,7 +98,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -116,7 +110,7 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -128,55 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Head
+      name: HallwayPicture
       rect:
         serializedVersion: 2
-        x: 18
-        y: 65
-        width: 8
-        height: 10
-      alignment: 9
-      pivot: {x: 0.44101477, y: 0.014636231}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b25e18c61184ae646996e2e85b56c8d6
-      internalID: -2634799857069279492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FrontArmT
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 49
-        width: 5
-        height: 12
-      alignment: 9
-      pivot: {x: 0.8932146, y: 0.95055836}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a0d3b0c7f230e343b8ee69d99a5c109
-      internalID: 8188619567538790795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Body
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 39
-        width: 11
-        height: 24
+        x: 1
+        y: 223
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,155 +136,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f746da294db6c8d41a57d2b2881b7eb0
-      internalID: 83177210387533205
+      spriteID: 002bf3a2fa5cf4548a03cd59bf717e3b
+      internalID: -7710477994757419862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackArmT
+      name: Washer
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 223
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1139f72ff375e8a438ae14a43e23ab86
+      internalID: 8329495169197411303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BathStand
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 223
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd10d5ada9a5e449a0c332ea28fb6dd
+      internalID: 1672307380471688160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bath
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 213
+        width: 64
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9547ced2cdfb17489413ab69d651de2
+      internalID: -8333136225655696058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KitchenStand
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 222
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8693129059de9e648858271564f0ac9c
+      internalID: 5170668725656063308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KitchenStove
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 222
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ab29c690996f04c91ba27d32b126c0
+      internalID: -9010231408641539952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KitchenPicture
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 190
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8652af2d71f64a34cb072ffd3e2317ab
+      internalID: -4485526773934184874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wardrobe
       rect:
         serializedVersion: 2
         x: 30
-        y: 50
-        width: 5
-        height: 11
-      alignment: 9
-      pivot: {x: 0.089501955, y: 0.98120636}
+        y: 142
+        width: 63
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c31699709f12c843bb6e0107d98f0e3
-      internalID: 5616473621025577943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FrontArmB
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 37
-        width: 4
-        height: 11
-      alignment: 9
-      pivot: {x: 0.4189806, y: 1.0008472}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 544c77cfc7e24694bb01f6ec7eea04ad
-      internalID: -3861189876761057223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FrontLegT
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 24
-        width: 5
-        height: 13
-      alignment: 9
-      pivot: {x: 0.5, y: 1.0068905}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54b6f1e69de1c7a4a8d107ba4061f645
-      internalID: -6387108288716491438
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BacktLegT
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 25
-        width: 5
-        height: 13
-      alignment: 9
-      pivot: {x: 0.5216053, y: 0.9819618}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56abd7dcaefef55409756f4c02332440
-      internalID: -4107915411609040553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FrontLegB
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 4
-        width: 6
-        height: 19
-      alignment: 9
-      pivot: {x: 0.3739697, y: 1.0060159}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4fb7bccf120c9f42b1b86160b1e9cf5
-      internalID: -6281386854765781268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackLegB
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 4
-        width: 6
-        height: 20
-      alignment: 9
-      pivot: {x: 0.39197412, y: 0.99151784}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09c1c384ebd14b24190e3f7e19d1a3da
-      internalID: 7152468569670892075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackArmB
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 38
-        width: 4
-        height: 11
-      alignment: 9
-      pivot: {x: 0.5540123, y: 1.0106679}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f76707482aabc5b449bedc52a17c07a0
-      internalID: 4970282627068225992
+      spriteID: 8cc89b354e633e14a9bfb310494f6327
+      internalID: -2801218345252212256
       vertices: []
       indices: 
       edges: []
@@ -349,7 +301,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
