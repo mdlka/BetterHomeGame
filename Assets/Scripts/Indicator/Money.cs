@@ -20,7 +20,7 @@ public class Money : ScriptableObject
     public void SetValue(int value)
     {
         _value = value;
-        _value = Mathf.Clamp(_value, 0, 9999999);
+        _value = Mathf.Clamp(_value, 0, 99999);
         UpdateMoneyValue();
     }
 }

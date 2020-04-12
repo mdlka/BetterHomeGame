@@ -49,7 +49,7 @@ public class InteractionWithPC : MonoBehaviour
     {
         _jobButton.enabled = false;
 
-        yield return new WaitForSeconds(30);
+        yield return new WaitForSeconds(5);
 
         _jobButton.enabled = true;
     }

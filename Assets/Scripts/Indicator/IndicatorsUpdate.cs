@@ -7,6 +7,7 @@ public class IndicatorsUpdate : MonoBehaviour
     [SerializeField] private Indicator[] _indicators;
     [SerializeField] [Range(0f, 0.1f)] private float _value;
     [SerializeField] [Range(0, 5)] private int _timeUpdate;
+    [SerializeField] private GameObject _gameOverPanel;
 
     private void Awake()
     {
@@ -24,5 +25,9 @@ public class IndicatorsUpdate : MonoBehaviour
 
         if (indicator.Value > 0f)
             StartCoroutine(DecreasingIndicatorValue(indicator, value));
+        else
+        {
+            _gameOverPanel.SetActive(true);
+        }
     }
 }

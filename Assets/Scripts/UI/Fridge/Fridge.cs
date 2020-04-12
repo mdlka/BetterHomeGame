@@ -48,6 +48,11 @@ public class Fridge : MonoBehaviour
         return false;
     }
 
+    public AssetFood[] GetFoods()
+    {
+        return Foods.ToArray();
+    }
+
     private void Sort(Transform container)
     {
         List<Transform> children = container.GetComponentInChildren<Transform>(true).Cast<Transform>().ToList();

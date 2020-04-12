@@ -9,9 +9,12 @@ public class BuyFood : MonoBehaviour
 
     public void Buy(AssetFood food, int price)
     {
-        if (_fridge.AddFood(food))
+        if (_money.Value - price >= 0)
         {
-            if(_money.Value - price >= 0) _money.SetValue(_money.Value - price);
-        }
+            if (_fridge.AddFood(food))
+            {
+                _money.SetValue(_money.Value - price);
+            }
+        }        
     }
 }
