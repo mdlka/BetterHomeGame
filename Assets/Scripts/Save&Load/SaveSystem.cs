@@ -1,28 +1,15 @@
 ﻿using System;
-using System.IO;
 using UnityEngine;
 
 public class SaveSystem : MonoBehaviour
 {
-    [SerializeField] private Indicator _health;
-    [SerializeField] private Indicator _energy;
-    [SerializeField] private Indicator _food;
-    [SerializeField] private Indicator _happy;
-    [SerializeField] private Money _money;
-
-    [SerializeField] private Transform _playerPosition;
-    [SerializeField] private Fridge _fridge;
-
     private Save _save = new Save();
-    private string _path;
 
     private void Awake()
     {
-        _path = Path.Combine(Application.dataPath, "Save.json");
-
-        if (File.Exists(_path))
+        if (PlayerPrefs.HasKey("Save"))
         {
-            _save = JsonUtility.FromJson<Save>(File.ReadAllText(_path));
+            _save = JsonUtility.FromJson<Save>(PlayerPrefs.GetString("Save"));
         }
         else
         {
@@ -31,13 +18,9 @@ public class SaveSystem : MonoBehaviour
         }
     }
 
-    private void OnApplicationQuit()
+    public void SaveGame()
     {
-        SetIndicators(_health.Value, _energy.Value, _food.Value, _happy.Value, _money.Value);
-        SetPlayerPosition(_playerPosition.position);
-        SetFoods(_fridge.GetFoods());
-
-        File.WriteAllText(_path, JsonUtility.ToJson(_save));
+        PlayerPrefs.SetString("Save", JsonUtility.ToJson(_save));
     }
 
     public void SetIndicators(float health, float energy, float food, float happy, int money)

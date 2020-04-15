@@ -1,8 +1,8 @@
-﻿using System;
-using System.IO;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Load : MonoBehaviour
+public class SaveAndLoadHome : MonoBehaviour
 {
     [SerializeField] private Indicator _health;
     [SerializeField] private Indicator _energy;
@@ -26,12 +26,21 @@ public class Load : MonoBehaviour
         _playerPosition.position = _save.GetPlayerPosition();
 
         AssetFood[] foods = _save.GetFoods();
-        if(foods != null)
+        if (foods != null)
         {
             foreach (AssetFood food in foods)
             {
                 _fridge.AddFood(food);
             }
         }
+    }
+
+    private void OnApplicationQuit()
+    {
+        _save.SetIndicators(_health.Value, _energy.Value, _food.Value, _happy.Value, _money.Value);
+        _save.SetPlayerPosition(_playerPosition.position);
+        _save.SetFoods(_fridge.GetFoods());
+
+        _save.SaveGame();
     }
 }

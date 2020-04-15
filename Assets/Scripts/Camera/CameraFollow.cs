@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    [SerializeField] [Range(0, 100)] private float _smoothTime;
-    [SerializeField] private float _offsetX;
     [SerializeField] private Transform _player;
+    [SerializeField] private float _offsetX;
+    [SerializeField] [Range(0, 100)] private float _smoothTime;
+
+    [SerializeField] private float _leftBorderX;
+    [SerializeField] private float _rightBorderX;
 
     private Vector3 _target;
     private float _baseY;
@@ -33,7 +36,7 @@ public class CameraFollow : MonoBehaviour
         FlipOffset(target);
 
         _target = new Vector3(target.x + _offsetX, _baseY, _baseZ);
-        _target.x = Mathf.Clamp(_target.x, -0.7f, 16f);
+        _target.x = Mathf.Clamp(_target.x, _leftBorderX, _rightBorderX);
 
         transform.position = Vector3.SmoothDamp(transform.position, _target, ref _currentVelocity, _smoothTime * Time.fixedDeltaTime);
     }

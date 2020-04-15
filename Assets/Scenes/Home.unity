@@ -6845,7 +6845,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1875599685}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b1b5f9cb3b096b4788b753ca7934617, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d6c5e03a192f814fa3e6f5015c6b3cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _health: {fileID: 11400000, guid: d51efdae66bf46449a1b3370f3d07e46, type: 2}
@@ -6868,13 +6868,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efee2b2af0f860d47b8b780a9acf51f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: {fileID: 11400000, guid: d51efdae66bf46449a1b3370f3d07e46, type: 2}
-  _energy: {fileID: 11400000, guid: ca9feb43f10f2a54ab4d470bcb3f4376, type: 2}
-  _food: {fileID: 11400000, guid: a88fd336a23b2aa40a72827dd3520512, type: 2}
-  _happy: {fileID: 11400000, guid: f6a0dd8c8be84484e9508dd8aba44b3c, type: 2}
-  _money: {fileID: 11400000, guid: 8e4aca961e428404db82661a29629643, type: 2}
-  _playerPosition: {fileID: 708678868}
-  _fridge: {fileID: 50886212}
 --- !u!4 &1875599688
 Transform:
   m_ObjectHideFlags: 0
