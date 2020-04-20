@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
 
     [SerializeField] private float _speed;
     [SerializeField] private ParticleSystem _blood;
+    [SerializeField] private ParticleSystem _sparks;
 
     private int _damage;
 
@@ -19,10 +20,23 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        Player player = collision.gameObject.GetComponent<Player>();
+        Knife knife = collision.gameObject.GetComponent<Knife>();
+
         if (enemy != null)
         {
             ParticleSystem blood = Instantiate(_blood, transform.position, _blood.transform.rotation);
             enemy.TakeDamage(_damage, blood);      
+        }
+        else if(player != null)
+        {
+            ParticleSystem blood = Instantiate(_blood, transform.position, _blood.transform.rotation);
+            player.TakeDamage(_damage, blood);
+        }
+        else if(knife != null)
+        {
+            ParticleSystem sparks = Instantiate(_sparks, transform.position, _sparks.transform.rotation);
+            knife.BeatOffBullet(sparks);
         }
 
         Hitting?.Invoke();

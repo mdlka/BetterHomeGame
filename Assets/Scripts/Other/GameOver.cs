@@ -5,18 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    [SerializeField] private IndicatorsChange _indicatorsChange;
-    [SerializeField] private Money _money;
+    [SerializeField] private SaveSystem _save;
 
     public void NewGameButton()
     {
-        _indicatorsChange.SetHealthValue(1);
-        _indicatorsChange.SetEnergyValue(1);
-        _indicatorsChange.SetFoodValue(1);
-        _indicatorsChange.SetHappyValue(1);
-
-        _money.SetValue(1000);
-
+        _save.DeleteSave();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

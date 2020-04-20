@@ -23,6 +23,11 @@ public class SaveSystem : MonoBehaviour
         PlayerPrefs.SetString("Save", JsonUtility.ToJson(_save));
     }
 
+    public void DeleteSave()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
     public void SetIndicators(float health, float energy, float food, float happy, int money)
     {
         _save.health = health;
@@ -32,14 +37,19 @@ public class SaveSystem : MonoBehaviour
         _save.money = money;
     }
 
+    public void SetFoods(AssetFood[] foods)
+    {
+        _save.foods = foods;
+    }
+
     public void SetPlayerPosition(Vector3 playerPosition)
     {
         _save.playerPosition = playerPosition;
     }
 
-    public void SetFoods(AssetFood[] foods)
+    public void SetIsKnifeInArm(bool isKnifeInArm)
     {
-        _save.foods = foods;
+        _save.isKnifeInArm = isKnifeInArm;
     }
 
     public float GetHealth() { return _save.health; }
@@ -48,9 +58,11 @@ public class SaveSystem : MonoBehaviour
     public float GetHappy() { return _save.happy; }
     public int GetMoney() { return _save.money; }
 
+    public AssetFood[] GetFoods() { return _save.foods; }
+
     public Vector3 GetPlayerPosition() { return _save.playerPosition; }
 
-    public AssetFood[] GetFoods() { return _save.foods; }
+    public bool GetIsKnifeInArm() { return _save.isKnifeInArm; }
 }
 
 [Serializable]
@@ -65,4 +77,6 @@ public class Save
     public AssetFood[] foods;
 
     public Vector3 playerPosition;
+
+    public bool isKnifeInArm;
 }

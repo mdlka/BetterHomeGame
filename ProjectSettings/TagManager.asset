@@ -15,10 +15,10 @@ TagManager:
   - 
   - 
   - PostProcess
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Bullet
+  - BulletEnemy
+  - Enemy
   - 
   - 
   - 

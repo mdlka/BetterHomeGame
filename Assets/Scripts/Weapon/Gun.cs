@@ -1,13 +1,16 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+    public event Action<int> AmmoChanged;
+
+    public int AmmoValue => _valueAmmo;
+
     [Header("Setting Gun")]
     [SerializeField] private int _damage;
-    [SerializeField] private int _amountAmmo;
-    [SerializeField] private float _timeBetweenShots;
+    [SerializeField] private int _valueAmmo;
     [SerializeField] private float _timeReload;
 
     [Header("Other")]
@@ -16,48 +19,32 @@ public class Gun : MonoBehaviour
 
     [SerializeField] private ParticleSystem _shot;
 
-    private int _defaultAmountAmmo;
     private bool _isReload;
 
-    private void Awake()
+    private void OnEnable()
     {
-        _defaultAmountAmmo = _amountAmmo;
+        if (_isReload) StartCoroutine(Reload(_timeReload));
     }
 
-    private void Update()
+    public void Shot()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (_isReload == false && _valueAmmo > 0)
         {
-            if (_isReload == false)
-            {
-                Shot();
-            }
+            _shot.Play();
+            SpawnBullet();
+
+            _valueAmmo--;
+            StartCoroutine(Reload(_timeReload));
         }
     }
 
-    private void Shot()
-    {
-        _shot.Play();
-        SpawnBullet();
-
-        _amountAmmo--;
-        if(_amountAmmo <= 0)
-        {
-            StartCoroutine(Reload(_timeReload, _defaultAmountAmmo));
-        }
-        else
-        {
-            StartCoroutine(Reload(_timeBetweenShots));
-        }
-    }
-
-    IEnumerator Reload(float time, int amountAmmo = 0)
+    IEnumerator Reload(float time)
     {
         _isReload = true;
 
         yield return new WaitForSeconds(time);
 
-        _amountAmmo += amountAmmo;
+        UpdateAmmoValue();
         _isReload = false;
     }
 
@@ -72,4 +59,15 @@ public class Gun : MonoBehaviour
 
         bullet.gameObject.SetActive(true);
     }  
+
+    private void UpdateAmmoValue()
+    {
+        AmmoChanged?.Invoke(_valueAmmo);
+    }
+
+    public void SetAmmoValue(int value)
+    {
+        _valueAmmo = value;
+        UpdateAmmoValue();
+    }
 }

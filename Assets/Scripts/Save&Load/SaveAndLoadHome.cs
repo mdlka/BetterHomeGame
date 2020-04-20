@@ -13,6 +13,8 @@ public class SaveAndLoadHome : MonoBehaviour
     [SerializeField] private Transform _playerPosition;
     [SerializeField] private Fridge _fridge;
 
+    [SerializeField] private InteractionWithKnife _knife;
+
     [SerializeField] private SaveSystem _save;
 
     private void Start()
@@ -24,6 +26,8 @@ public class SaveAndLoadHome : MonoBehaviour
         _money.SetValue(_save.GetMoney());
 
         _playerPosition.position = _save.GetPlayerPosition();
+
+        _knife.SetKnifeInArm(_save.GetIsKnifeInArm());
 
         AssetFood[] foods = _save.GetFoods();
         if (foods != null)
@@ -40,6 +44,7 @@ public class SaveAndLoadHome : MonoBehaviour
         _save.SetIndicators(_health.Value, _energy.Value, _food.Value, _happy.Value, _money.Value);
         _save.SetPlayerPosition(_playerPosition.position);
         _save.SetFoods(_fridge.GetFoods());
+        _save.SetIsKnifeInArm(_knife.GetKnifeInArm());
 
         _save.SaveGame();
     }

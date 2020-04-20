@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class InteractionWithPerson : MonoBehaviour
+public class InteractionWithDoor : MonoBehaviour
 {
-    [SerializeField] GameObject _itemMenu;
+    [SerializeField] private GameObject _doorButton;
 
     private void Awake()
     {
-        if(_itemMenu.activeSelf) _itemMenu.SetActive(false);
+        if (_doorButton.activeSelf) _doorButton.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,12 +18,17 @@ public class InteractionWithPerson : MonoBehaviour
 
         if (player != null)
         {
-            _itemMenu.SetActive(true);
+            _doorButton.SetActive(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        _itemMenu.SetActive(false);
+        _doorButton.SetActive(false);
+    }
+
+    public void DoorButton()
+    {
+        SceneManager.LoadScene(1);
     }
 }
