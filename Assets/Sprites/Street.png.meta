@@ -1,16 +1,28 @@
 fileFormatVersion: 2
-guid: 4ad37a297de116041bb5ef57b06742d8
+guid: f9a2f68c6b34b364ebcb5d5af9df3a0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9212286445950041963
-    second: Gun
+      213: -692078636420456154
+    second: Road
   - first:
-      213: -768287472138149725
-    second: Bullet
+      213: -1479051408267179727
+    second: RoadSign
   - first:
-      213: -2000786669314898646
-    second: BulletIcon
+      213: -8130602074403603745
+    second: BlueBuilding
+  - first:
+      213: 5207673271064580885
+    second: RedBuilding
+  - first:
+      213: 2768615412850113313
+    second: YellowBuilding
+  - first:
+      213: -5130273709848911276
+    second: Building
+  - first:
+      213: -692078636420456154
+    second: Bottle
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -54,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -84,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,7 +108,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gun
+      name: Road
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 55
-        height: 32
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff21570eb3718e1469a23184c3c3b55e
-      internalID: -9212286445950041963
+      spriteID: 1921ea426f2f40449bef96531b51d711
+      internalID: -692078636420456154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet
+      name: RoadSign
       rect:
         serializedVersion: 2
-        x: 57
-        y: 120
-        width: 9
-        height: 5
+        x: 64
+        y: 176
+        width: 32
+        height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,29 +154,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e94427b68c0bd7f43a750df8c3f25cf4
-      internalID: -768287472138149725
+      spriteID: b2322317cd129bc43ad025fe844c782b
+      internalID: -1479051408267179727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BulletIcon
+      name: Building
       rect:
         serializedVersion: 2
-        x: 75
-        y: 118
-        width: 5
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 0
+        width: 462
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b80aa929f054c6b4b882e5b2d0aa0811
-      internalID: -2000786669314898646
+      spriteID: 9369a111b377253419dafdb468d3a255
+      internalID: -5130273709848911276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bottle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63404b0ec8449d34ba25cb8debb07098
+      internalID: -692078636420456154
       vertices: []
       indices: 
       edges: []

@@ -86,7 +86,7 @@ public class Player : MonoBehaviour
         HealthChanged?.Invoke(_health);
     }
 
-    public void SetAmmoValue(int value)
+    public void SetHealthValue(int value)
     {
         _health = value;
         UpdateHealthValue();
