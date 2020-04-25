@@ -10,17 +10,18 @@ public class Enemy : MonoBehaviour
     [Header("Settings Gun")]
     [SerializeField] private Gun _gun;
     [SerializeField] private float _distanceToTarget;
-    [SerializeField] private int _offsetZ;
 
-    private int _defaultY = 180;
+    [Header("Setting Arm")]
+    [SerializeField] private int _offsetZ;
+    [SerializeField] private int _offsetY;
 
     [Header("Other")]
     [SerializeField] private Drop _drop;
     [SerializeField] private Transform _target;
     [SerializeField] private Transform _arm;
-    [SerializeField] private bool _isLeft = true;
 
     private Animator _anim;
+    private bool _isLeft = false;
     private bool _isAlive = true;
 
     private void Awake()
@@ -41,10 +42,10 @@ public class Enemy : MonoBehaviour
     private void ArmControl()
     {
         Vector3 targetDistance = _target.position - _arm.position;
-        float angleDirection = Mathf.Atan2(targetDistance.y, targetDistance.x) * Mathf.Rad2Deg;
-        _arm.rotation = Quaternion.Euler(0f, _defaultY, angleDirection + _offsetZ);
+        float angleDirection = Mathf.Atan2(targetDistance.y, Mathf.Abs(targetDistance.x)) * Mathf.Rad2Deg;
+        _arm.rotation = Quaternion.Euler(0f, _offsetY, angleDirection + _offsetZ);
 
-        if (targetDistance.x < 0.5f && _isLeft == false || targetDistance.x > 0.5f && _isLeft) Flip();
+        if (targetDistance.x < 0.1f && _isLeft == false || targetDistance.x > 0.1f && _isLeft) Flip();
 
         if(Mathf.Abs(targetDistance.x) < _distanceToTarget)
         {
@@ -55,9 +56,9 @@ public class Enemy : MonoBehaviour
     private void Flip()
     {
         _isLeft = !_isLeft;
+
+        _offsetY += 180;
         transform.Rotate(0f, 180f, 0f);
-        _defaultY += 180;
-        _offsetZ *= -1;
     }
 
     public void TakeDamage(int damage, ParticleSystem blood)

@@ -7,9 +7,15 @@ public class GameOver : MonoBehaviour
 {
     [SerializeField] private SaveSystem _save;
 
-    public void NewGameButton()
+    public void NewGame()
     {
         _save.DeleteSave();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(1);
+    }
+
+    public void BackToMenu()
+    {
+        _save.DeleteSave();
+        SceneManager.LoadScene(0);
     }
 }

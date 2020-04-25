@@ -191,7 +191,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7097127374818634269}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -41.13, y: -2.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -206,7 +206,7 @@ Transform:
   - {fileID: 7097127375731928876}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &7097127374818634241
 Rigidbody2D:
   serializedVersion: 4
@@ -345,11 +345,11 @@ MonoBehaviour:
   _health: 100
   _gun: {fileID: 7097127375126125577}
   _distanceToTarget: 15
-  _offsetZ: -90
+  _offsetZ: 90
+  _offsetY: 0
   _drop: {fileID: 7097127374818634240}
   _target: {fileID: 0}
   _arm: {fileID: 7097127373992055197}
-  _isLeft: 1
 --- !u!114 &7097127374818634240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a17549cf739c64a811d2a3d8289ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 2
+  _damage: 3
   _valueAmmo: 999
   _timeReload: 1
   _bulletObjectPool: {fileID: 0}

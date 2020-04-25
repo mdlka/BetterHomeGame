@@ -3,9 +3,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ShopCell : MonoBehaviour, IPointerClickHandler
+public class ShopCell : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
 {
     public event Action Buying;
+    public event Action Enter;
 
     [SerializeField] private Text _priceField;
     [SerializeField] private Image _iconField;
@@ -20,5 +21,10 @@ public class ShopCell : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         Buying?.Invoke();
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        Enter?.Invoke();
     }
 }

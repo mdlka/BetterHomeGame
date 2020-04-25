@@ -32,6 +32,12 @@ public class InteractionWithPC : MonoBehaviour
         _shopMenu.SetActive(false);
     }
 
+    public void CloseButton()
+    {
+        _pcMenu.SetActive(true);
+        _shopMenu.SetActive(false);
+    }
+
     public void ShopButton()
     {
         _pcMenu.SetActive(false);

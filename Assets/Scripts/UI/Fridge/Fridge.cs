@@ -9,6 +9,7 @@ public class Fridge : MonoBehaviour
     [SerializeField] private FridgeCell _fridgeCellTemplate;
     [SerializeField] private Transform _container;
     [SerializeField] private EatFood _eatFood;
+    [SerializeField] private Prompt _prompt;
 
     public void OnEnable()
     {
@@ -30,6 +31,9 @@ public class Fridge : MonoBehaviour
             cell.gameObject.name = food.Name;
 
             Sort(_container);
+
+            cell.Enter += () => _prompt.SetPromptValue((int)(food.Health * 100), (int)(food.Energy * 100),
+                (int)(food.Food * 100), (int)(food.Happy * 100));
 
             cell.Eating += () => Destroy(cell.gameObject);
             cell.Eating += () => foods.Remove(food);

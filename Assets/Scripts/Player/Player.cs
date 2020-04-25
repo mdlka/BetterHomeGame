@@ -15,18 +15,21 @@ public class Player : MonoBehaviour
     [SerializeField] private Gun _gun;
     [SerializeField] private Knife _knife;
 
+    [Header("Other")]
+    [SerializeField] private bool _inHome;
+
     private bool _haveGun;
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && _inHome == false)
         {
             if (_gun.gameObject.activeSelf)
             {
                 _gun.Shot();
             }
         }
-        else if (Input.GetMouseButtonDown(1))
+        else if (Input.GetMouseButtonDown(1) && _inHome == false)
         {
             if (_haveGun)
             {
@@ -89,6 +92,7 @@ public class Player : MonoBehaviour
     public void SetHealthValue(int value)
     {
         _health = value;
+        _health = Mathf.Clamp(_health, 0, 100);
         UpdateHealthValue();
     }
 }

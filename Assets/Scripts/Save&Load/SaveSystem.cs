@@ -13,8 +13,12 @@ public class SaveSystem : MonoBehaviour
         }
         else
         {
+            SetGameExists(false);
             SetIndicators(1f, 1f, 1f, 1f, 500);
             SetPlayerPosition(new Vector3(-23.8f, -1.36f, 0f));
+            SetIsKnifeInArm(false);
+            SetDay(30);
+            SetScene(1);
         }
     }
 
@@ -26,6 +30,11 @@ public class SaveSystem : MonoBehaviour
     public void DeleteSave()
     {
         PlayerPrefs.DeleteAll();
+    }
+
+    public void SetGameExists(bool gameExists)
+    {
+        _save.gameExists = gameExists;
     }
 
     public void SetIndicators(float health, float energy, float food, float happy, int money)
@@ -52,6 +61,18 @@ public class SaveSystem : MonoBehaviour
         _save.isKnifeInArm = isKnifeInArm;
     }
 
+    public void SetScene(int scene)
+    {
+        _save.scene = scene;
+    }
+
+    public void SetDay(int day)
+    {
+        _save.day = day;
+    }
+
+    public bool GetGameExists() { return _save.gameExists; }
+
     public float GetHealth() { return _save.health; }
     public float GetEnergy() { return _save.energy; }
     public float GetFood() { return _save.food; }
@@ -59,15 +80,19 @@ public class SaveSystem : MonoBehaviour
     public int GetMoney() { return _save.money; }
 
     public AssetFood[] GetFoods() { return _save.foods; }
-
     public Vector3 GetPlayerPosition() { return _save.playerPosition; }
-
     public bool GetIsKnifeInArm() { return _save.isKnifeInArm; }
+
+    public int GetScene() { return _save.scene; }
+
+    public int GetDay() { return _save.day; }
 }
 
 [Serializable]
 public class Save
 {
+    public bool gameExists;
+
     public float health;
     public float energy;
     public float food;
@@ -75,8 +100,9 @@ public class Save
     public int money;
 
     public AssetFood[] foods;
+    public bool isKnifeInArm;
+    public int day;
 
     public Vector3 playerPosition;
-
-    public bool isKnifeInArm;
+    public int scene;
 }

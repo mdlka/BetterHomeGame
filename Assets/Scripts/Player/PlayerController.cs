@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] [Range(0, 10)] private float _speed;
     [SerializeField] private Animator _animator;
 
+    [SerializeField] private bool _inHome = true;
+
     private float _horizontalMove;
     private bool _facingRight = true;
     private Rigidbody2D _rb;
@@ -14,6 +16,8 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+
+        if (_inHome == false) Flip();
     }
 
     private void FixedUpdate()

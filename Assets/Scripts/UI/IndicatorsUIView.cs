@@ -29,5 +29,4 @@ public class IndicatorsUIView : MonoBehaviour
         _scrollBar.size = value;
         _value.text = string.Format("{0:0}%", value * 100);
     }
-
 }

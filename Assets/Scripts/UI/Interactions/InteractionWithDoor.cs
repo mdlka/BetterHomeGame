@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class InteractionWithDoor : MonoBehaviour
 {
     [SerializeField] private GameObject _doorButton;
+    [SerializeField] private GameObject _textTakeKnife;
+    [SerializeField] private InteractionWithKnife _knife;
+
+    [SerializeField] private SaveAndLoadHome _save;
 
     private void Awake()
     {
@@ -18,17 +22,26 @@ public class InteractionWithDoor : MonoBehaviour
 
         if (player != null)
         {
-            _doorButton.SetActive(true);
+            if (_knife.GetKnifeInArm())
+            {
+                _doorButton.SetActive(true);
+            }
+            else
+            {
+                _textTakeKnife.SetActive(true);
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         _doorButton.SetActive(false);
+        _textTakeKnife.SetActive(false);
     }
 
     public void DoorButton()
     {
-        SceneManager.LoadScene(1);
+        _save.SaveAll();
+        SceneManager.LoadScene(2);
     }
 }

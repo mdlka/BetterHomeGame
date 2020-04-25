@@ -8,6 +8,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private ShopCell _shopCellTemplate;
     [SerializeField] private Transform _container;
     [SerializeField] private BuyFood _buyFood;
+    [SerializeField] private Prompt _prompt;
 
     private void Awake()
     {
@@ -25,6 +26,9 @@ public class Shop : MonoBehaviour
         {
             ShopCell cell = Instantiate(_shopCellTemplate, _container);
             cell.Render(food);
+
+            cell.Enter += () => _prompt.SetPromptValue((int)(food.Health * 100), (int)(food.Energy * 100),
+                (int)(food.Food * 100), (int)(food.Happy * 100));
 
             cell.Buying += () => _buyFood.Buy(food, food.Price);
         });

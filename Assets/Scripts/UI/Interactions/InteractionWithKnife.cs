@@ -1,19 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InteractionWithKnife : MonoBehaviour
 {
     [SerializeField] private GameObject _knifeButton;
+    [SerializeField] private Text _buttonText;
     [SerializeField] private GameObject _knifeInArm;
 
+    private SpriteRenderer _knife;
     private bool _isKnifeInArm;
 
-    private void Awake()
+    private void Start()
     {
+        _knife = GetComponent<SpriteRenderer>();
+
         if (_knifeButton.activeSelf) _knifeButton.SetActive(false);
 
-        if (_isKnifeInArm == true) gameObject.SetActive(false);
+        if (_isKnifeInArm == true) _knife.enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -33,17 +38,43 @@ public class InteractionWithKnife : MonoBehaviour
 
     public void KnifeButton()
     {
-        _isKnifeInArm = true;
-        _knifeInArm.SetActive(true);
-        gameObject.SetActive(false);
+        if(_isKnifeInArm == false)
+        {
+            _isKnifeInArm = true;
+            _knifeInArm.SetActive(true);
+            _knife.enabled = false;
+
+            _buttonText.text = "Положить";
+        }
+        else
+        {
+            _isKnifeInArm = false;
+            _knifeInArm.SetActive(false);
+            _knife.enabled = true;
+
+            _buttonText.text = "Взять";
+        }
+
+        _knifeButton.SetActive(false);
     }
 
     public void SetKnifeInArm(bool isKnifeInArm)
     {
         if(isKnifeInArm == true)
         {
+            _isKnifeInArm = true;
             _knifeInArm.SetActive(true);
-            gameObject.SetActive(false);
+            _knife.enabled = false;
+
+            _buttonText.text = "Положить";
+        }
+        else
+        {
+            _isKnifeInArm = false;
+            _knifeInArm.SetActive(false);
+            _knife.enabled = true;
+
+            _buttonText.text = "Взять";
         }
     }
 

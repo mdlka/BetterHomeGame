@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
     [SerializeField] private GameObject _pausePanel;
+    [SerializeField] private GameObject _settingPanel;
+
+    [SerializeField] private SaveAndLoad _save;
+
     private bool _isPaused;
 
     private void Update()
@@ -32,11 +37,17 @@ public class Pause : MonoBehaviour
 
     public void Setting()
     {
+        _settingPanel.SetActive(true);
+    }
 
+    public void CloseSetting()
+    {
+        _settingPanel.SetActive(false);
     }
 
     public void ExitToMenu()
     {
-        Application.Quit();
+        _save.SaveAll();
+        SceneManager.LoadScene(0);
     }
 }
