@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Street.unity
     guid: 2066c7dd36d98b8458b3b5785d15d662
+  - enabled: 1
+    path: Assets/Scenes/Laboratory.unity
+    guid: abf23ccec1280e844b6d85b29e5dcec4
   m_configObjects: {}

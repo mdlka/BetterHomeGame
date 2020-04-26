@@ -95,4 +95,14 @@ public class Player : MonoBehaviour
         _health = Mathf.Clamp(_health, 0, 100);
         UpdateHealthValue();
     }
+
+    public void SetHaveGun(bool haveGun)
+    {
+        _haveGun = haveGun;
+    }
+
+    public bool GetHaveGun()
+    {
+        return _haveGun;
+    }
 }

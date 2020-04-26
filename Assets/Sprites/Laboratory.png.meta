@@ -1,34 +1,22 @@
 fileFormatVersion: 2
-guid: f9a2f68c6b34b364ebcb5d5af9df3a0f
+guid: 87dce7cd64de0174c829746016fb7e01
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -692078636420456154
-    second: Road
+      213: 6073513648497608808
+    second: DoorwayT
   - first:
-      213: -1479051408267179727
-    second: RoadSign
+      213: 1100896068798298732
+    second: Room
   - first:
-      213: -8130602074403603745
-    second: BlueBuilding
+      213: 7973861647424831005
+    second: Wall
   - first:
-      213: 5207673271064580885
-    second: RedBuilding
+      213: -6787985908003407851
+    second: DoorwayB
   - first:
-      213: 2768615412850113313
-    second: YellowBuilding
-  - first:
-      213: -5130273709848911276
-    second: Building
-  - first:
-      213: -692078636420456154
-    second: Bottle
-  - first:
-      213: 553348018889396224
-    second: LaboratoryDoorway
-  - first:
-      213: -2491362870760331369
-    second: Doorway
+      213: -3684458286581123709
+    second: Camera
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -72,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -89,8 +77,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,8 +89,8 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,8 +101,8 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Road
+      name: DoorwayT
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 64
-        height: 64
+        x: 5
+        y: 4
+        width: 17
+        height: 97
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1921ea426f2f40449bef96531b51d711
-      internalID: -692078636420456154
+      spriteID: e1c836af9c7ee4a4282e0813e9e0aa42
+      internalID: 6073513648497608808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RoadSign
+      name: Room
       rect:
         serializedVersion: 2
-        x: 64
-        y: 176
-        width: 32
-        height: 80
+        x: 23
+        y: 4
+        width: 137
+        height: 97
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,41 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2322317cd129bc43ad025fe844c782b
-      internalID: -1479051408267179727
+      spriteID: 46676cf39369ad243bca31d8691d3647
+      internalID: 1100896068798298732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building
+      name: Wall
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 462
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9369a111b377253419dafdb468d3a255
-      internalID: -5130273709848911276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bottle
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 176
-        width: 6
-        height: 16
+        x: 161
+        y: 4
+        width: 17
+        height: 97
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,39 +169,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63404b0ec8449d34ba25cb8debb07098
-      internalID: -692078636420456154
+      spriteID: 682d643c47c0b5646bafd72896c15a3d
+      internalID: 7973861647424831005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LaboratoryDoorway
+      name: DoorwayB
       rect:
         serializedVersion: 2
-        x: 559
-        y: 22
-        width: 48
-        height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee14668621c4f2049b1266b1be47ddc6
-      internalID: 553348018889396224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Doorway
-      rect:
-        serializedVersion: 2
-        x: 608
-        y: 0
+        x: 197
+        y: 9
         width: 6
         height: 64
       alignment: 0
@@ -244,8 +190,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7d21a022d36ad2418516c79a3db09ea
-      internalID: -2491362870760331369
+      spriteID: 1a2072b74eba35f42a0d624c35489056
+      internalID: -6787985908003407851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camera
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 33
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7360cf4099ed88949b3eca340002378e
+      internalID: -3684458286581123709
       vertices: []
       indices: 
       edges: []

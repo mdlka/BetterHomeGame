@@ -71,6 +71,16 @@ public class SaveSystem : MonoBehaviour
         _save.day = day;
     }
 
+    public void SetHaveGun(bool haveGun)
+    {
+        _save.haveGun = haveGun;
+    }
+
+    public void SetAmmoValue(int value)
+    {
+        _save.ammoValue = value;
+    }
+
     public bool GetGameExists() { return _save.gameExists; }
 
     public float GetHealth() { return _save.health; }
@@ -86,6 +96,9 @@ public class SaveSystem : MonoBehaviour
     public int GetScene() { return _save.scene; }
 
     public int GetDay() { return _save.day; }
+
+    public bool GetHaveGun() { return _save.haveGun; }
+    public int GetAmmoValue() { return _save.ammoValue; }
 }
 
 [Serializable]
@@ -102,7 +115,10 @@ public class Save
     public AssetFood[] foods;
     public bool isKnifeInArm;
     public int day;
-
     public Vector3 playerPosition;
+
+    public bool haveGun;
+    public int ammoValue;
+
     public int scene;
 }

@@ -26,6 +26,6 @@ public class HealthUIView : MonoBehaviour
     {
         _healthValue.size = value * 0.01f;
 
-        if (value == 0) _gameOverPanel.SetActive(true);
+        if (value <= 0) _gameOverPanel.SetActive(true);
     }
 }

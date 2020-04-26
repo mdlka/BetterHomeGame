@@ -740,7 +740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 519420031}
   _playerController: {fileID: 1442000105}
-  _offset: 85
+  _offset: 90.2
 --- !u!212 &92724759
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11115,6 +11115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 3
   _animator: {fileID: 1442000107}
+  _inHome: 1
 --- !u!114 &1442000106
 MonoBehaviour:
   m_ObjectHideFlags: 0
