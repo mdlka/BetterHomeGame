@@ -22,6 +22,7 @@ public class Bullet : MonoBehaviour
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
         Player player = collision.gameObject.GetComponent<Player>();
         Knife knife = collision.gameObject.GetComponent<Knife>();
+        Safe safe = collision.gameObject.GetComponent<Safe>();   
 
         if (enemy != null)
         {
@@ -37,6 +38,11 @@ public class Bullet : MonoBehaviour
         {
             ParticleSystem sparks = Instantiate(_sparks, transform.position, _sparks.transform.rotation);
             knife.BeatOffBullet(sparks);
+        }
+        else if(safe != null)
+        {
+            ParticleSystem sparks = Instantiate(_sparks, transform.position, _sparks.transform.rotation);
+            safe.BeatOffBullet(sparks);
         }
 
         Hitting?.Invoke();

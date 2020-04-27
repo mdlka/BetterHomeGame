@@ -5,8 +5,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public event Action<int> HealthChanged;
+    public event Action<float> SuspicionChanged;
 
     public int Health => _health;
+    public float Suspicion { get; private set; }
 
     [Header("Settings Player")]
     [SerializeField] private int _health;
@@ -46,6 +48,7 @@ public class Player : MonoBehaviour
             }
         }
 
+        if (Suspicion > 0 && Time.timeScale != 0) SetSuspicionValue(Suspicion - 0.05f);
     }
 
     public void TakeDamage(int damage, ParticleSystem blood)
@@ -94,6 +97,18 @@ public class Player : MonoBehaviour
         _health = value;
         _health = Mathf.Clamp(_health, 0, 100);
         UpdateHealthValue();
+    }
+
+    private void UpdateSuspicionValue()
+    {
+        SuspicionChanged?.Invoke(Suspicion);
+    }
+
+    public void SetSuspicionValue(float value)
+    {
+        Suspicion = value;
+        Suspicion = Mathf.Clamp(Suspicion, 0, 100);
+        UpdateSuspicionValue();
     }
 
     public void SetHaveGun(bool haveGun)

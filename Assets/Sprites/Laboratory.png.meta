@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: -3684458286581123709
     second: Camera
+  - first:
+      213: 2932355798539454542
+    second: Safe
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -213,6 +216,27 @@ TextureImporter:
       bones: []
       spriteID: 7360cf4099ed88949b3eca340002378e
       internalID: -3684458286581123709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Safe
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 34
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c51d76f785d98344943fd63ada9ecb9
+      internalID: 2932355798539454542
       vertices: []
       indices: 
       edges: []
