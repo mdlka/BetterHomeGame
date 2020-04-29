@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class InteractionWithToiletBowl : MonoBehaviour
 {
+    [Header("Pause between going to toilet")]
+    [SerializeField] [Range(0, 100)] private int _pauseTime;
+
+    [Header("Button")]
     [SerializeField] private GameObject _toiletBowlButton;
+
+    [Header("Sound")]
+    [SerializeField] AudioSource _clickSound;
+    [SerializeField] private AudioSource _urineAudio;
+
+    [Header("Other")]
     [SerializeField] private IndicatorsChange _indicatorsChange;
     [SerializeField] private PlayerController _playerContoller;
     [SerializeField] private ParticleSystem _urine;
-    [SerializeField] [Range(0, 100)] private int _pauseTime;
 
     private bool _toiletBowlPause;
 
@@ -46,10 +55,11 @@ public class InteractionWithToiletBowl : MonoBehaviour
     IEnumerator Pissing()
     {
         _urine.Play();
+        _urineAudio.Play();
         _playerContoller.enabled = false;
         _toiletBowlButton.SetActive(false);
 
-        yield return new WaitForSeconds(8f);
+        yield return new WaitForSeconds(6f);
 
         _playerContoller.enabled = true;
 

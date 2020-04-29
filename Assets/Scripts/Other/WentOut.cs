@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class WentOut : MonoBehaviour
 {
+    [Header("Sound")]
+    [SerializeField] AudioSource _clickSound;
+
     private void OnEnable()
     {
         Time.timeScale = 0f;
@@ -11,6 +14,7 @@ public class WentOut : MonoBehaviour
 
     public void CloseWentOut()
     {
+        _clickSound.Play();
         gameObject.SetActive(false);
     }
 

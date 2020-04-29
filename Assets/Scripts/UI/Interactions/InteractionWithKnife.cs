@@ -5,9 +5,15 @@ using UnityEngine.UI;
 
 public class InteractionWithKnife : MonoBehaviour
 {
+    [Header("Button")]
     [SerializeField] private GameObject _knifeButton;
     [SerializeField] private Text _buttonText;
+
+    [Header("Knife")]
     [SerializeField] private GameObject _knifeInArm;
+
+    [Header("Sound")]
+    [SerializeField] AudioSource _clickSound;
 
     private SpriteRenderer _knife;
     private bool _isKnifeInArm;
@@ -38,7 +44,9 @@ public class InteractionWithKnife : MonoBehaviour
 
     public void KnifeButton()
     {
-        if(_isKnifeInArm == false)
+        _clickSound.Play();
+
+        if (_isKnifeInArm == false)
         {
             _isKnifeInArm = true;
             _knifeInArm.SetActive(true);

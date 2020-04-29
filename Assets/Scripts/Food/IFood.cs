@@ -9,4 +9,5 @@ public interface IFood
     float Food { get; }
     float Happy { get; }
     int Price { get; }
+    bool isWater { get; }
 }

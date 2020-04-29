@@ -15,6 +15,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int _offsetZ;
     [SerializeField] private int _offsetY;
 
+    [Header("Sound")]
+    [SerializeField] AudioSource _damageSound;
+    [SerializeField] AudioClip _bulletInBody;
+    [SerializeField] AudioClip _knifeInBody;
+
     [Header("Other")]
     [SerializeField] private Drop _drop;
     [SerializeField] private Transform _target;
@@ -61,10 +66,14 @@ public class Enemy : MonoBehaviour
         transform.Rotate(0f, 180f, 0f);
     }
 
-    public void TakeDamage(int damage, ParticleSystem blood)
+    public void TakeDamage(int damage, ParticleSystem blood, bool gun)
     {
         Destroy(blood.gameObject, blood.main.startLifetimeMultiplier);
         _health -= damage;
+
+        _damageSound.pitch = Random.Range(0.9f, 1.1f);
+        if (gun) _damageSound.PlayOneShot(_bulletInBody);
+        else _damageSound.PlayOneShot(_knifeInBody);
 
         if (_health <= 0 && _isAlive)
         {

@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class BuyFood : MonoBehaviour
 {
+    [Header("Components")]
     [SerializeField] private Money _money;
     [SerializeField] private Fridge _fridge;
+
+    [Header("Sound")]
+    [SerializeField] AudioSource _clickSound;
 
     public void Buy(AssetFood food, int price)
     {
@@ -13,6 +17,7 @@ public class BuyFood : MonoBehaviour
         {
             if (_fridge.AddFood(food))
             {
+                _clickSound.Play();
                 _money.SetValue(_money.Value - price);
             }
         }        

@@ -17,6 +17,11 @@ public class Player : MonoBehaviour
     [SerializeField] private Gun _gun;
     [SerializeField] private Knife _knife;
 
+    [Header("Sound")]
+    [SerializeField] AudioSource _sound;
+    [SerializeField] AudioClip _bulletInBody;
+    [SerializeField] AudioClip _takeAmmo;
+
     [Header("Other")]
     [SerializeField] private bool _inHome;
 
@@ -53,6 +58,9 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage, ParticleSystem blood)
     {
+        _sound.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
+        _sound.PlayOneShot(_bulletInBody);
+
         Destroy(blood.gameObject, blood.main.startLifetimeMultiplier);
         _health -= damage;
 
@@ -66,6 +74,9 @@ public class Player : MonoBehaviour
 
     private void TakeDrop(AmmoDrop drop)
     {
+        _sound.pitch = 1f;
+        _sound.PlayOneShot(_takeAmmo);
+
         if (_haveGun == false)
         {
             _haveGun = true;

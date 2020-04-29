@@ -5,11 +5,20 @@ using UnityEngine.UI;
 
 public class InteractionWithPC : MonoBehaviour
 {
+    [Header("Menu")]
     [SerializeField] private GameObject _pcMenu;
     [SerializeField] private GameObject _shopMenu;
+
+    [Header("Button")]
     [SerializeField] private Button _jobButton;
 
+    [Header("Money")]
     [SerializeField] private Money _money;
+
+    [Header("Sound")]
+    [SerializeField] AudioSource _PCSound;
+    [SerializeField] AudioClip _jobSound;
+    [SerializeField] AudioClip _clickSound;
 
     private void Awake()
     {
@@ -34,29 +43,34 @@ public class InteractionWithPC : MonoBehaviour
 
     public void CloseButton()
     {
+        _PCSound.PlayOneShot(_clickSound);
+
         _pcMenu.SetActive(true);
         _shopMenu.SetActive(false);
     }
 
     public void ShopButton()
     {
+        _PCSound.PlayOneShot(_clickSound);
+
         _pcMenu.SetActive(false);
         _shopMenu.SetActive(true);
     }
 
     public void JobButton()
     {
-        _money.SetValue(_money.Value + 100);
+        _PCSound.PlayOneShot(_jobSound);
 
+        _money.SetValue(_money.Value + 100);
         StartCoroutine(PauseJob());
     }
 
     IEnumerator PauseJob()
     {
-        _jobButton.enabled = false;
+        _jobButton.interactable = false;
 
         yield return new WaitForSeconds(5);
 
-        _jobButton.enabled = true;
+        _jobButton.interactable = true;
     }
 }

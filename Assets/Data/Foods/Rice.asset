@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _uiIcon: {fileID: 7673594839502701706, guid: c6f7841f037949742984dc6bb35988ab, type: 3}
   _name: "\u0420\u0438\u0441"
-  _health: 0.1
+  _health: 0.2
   _energy: 0.1
   _food: 0.3
   _happy: 0

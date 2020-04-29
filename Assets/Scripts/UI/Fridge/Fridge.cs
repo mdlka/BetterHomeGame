@@ -37,7 +37,7 @@ public class Fridge : MonoBehaviour
 
             cell.Eating += () => Destroy(cell.gameObject);
             cell.Eating += () => foods.Remove(food);
-            cell.Eating += () => _eatFood.Eat(food.Health, food.Energy, food.Food, food.Happy);
+            cell.Eating += () => _eatFood.Eat(food.Health, food.Energy, food.Food, food.Happy, food.isWater);
         });
     }
 

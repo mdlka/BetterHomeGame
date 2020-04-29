@@ -5,7 +5,13 @@ using UnityEngine.UI;
 
 public class InteractionWithBed : MonoBehaviour
 {
+    [Header("Button")]
     [SerializeField] private GameObject _bedButton;
+
+    [Header("Sound")]
+    [SerializeField] AudioSource _clickSound;
+
+    [Header("Other")]
     [SerializeField] private Image _curtain;
     [SerializeField] private IndicatorsChange _indicatorsChange;
 
@@ -31,6 +37,7 @@ public class InteractionWithBed : MonoBehaviour
 
     public void Sleep()
     {
+        _clickSound.Play();
         StartCoroutine(ImitationOfSleep());
     }
 

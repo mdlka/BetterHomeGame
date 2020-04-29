@@ -13,10 +13,14 @@ public class Gun : MonoBehaviour
     [SerializeField] private int _valueAmmo;
     [SerializeField] private float _timeReload;
 
+    [Header("Sound")]
+    [SerializeField] private AudioSource _gunSound;
+    [SerializeField] private AudioClip _shotSound;
+    [SerializeField] private AudioClip _noBulletsSound;
+
     [Header("Other")]
     [SerializeField] private BulletObjectPool _bulletObjectPool;
     [SerializeField] private Transform _shotDirection;
-
     [SerializeField] private ParticleSystem _shot;
 
     private bool _isReload;
@@ -27,14 +31,25 @@ public class Gun : MonoBehaviour
     }
 
     public void Shot()
-    {
-        if (_isReload == false && _valueAmmo > 0)
+    { 
+        if(Time.timeScale != 0)
         {
-            _shot.Play();
-            SpawnBullet();
+            if (_isReload == false && _valueAmmo > 0)
+            {
+                _gunSound.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
+                _gunSound.PlayOneShot(_shotSound);
 
-            _valueAmmo--;
-            StartCoroutine(Reload(_timeReload));
+                _shot.Play();
+                SpawnBullet();
+
+                _valueAmmo--;
+                StartCoroutine(Reload(_timeReload));
+            }
+            else if (_valueAmmo <= 0)
+            {
+                _gunSound.pitch = 1f;
+                _gunSound.PlayOneShot(_noBulletsSound);
+            }
         }
     }
 

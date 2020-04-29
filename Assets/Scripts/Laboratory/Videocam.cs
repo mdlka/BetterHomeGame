@@ -5,6 +5,7 @@ using UnityEngine;
 public class Videocam : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _break;
+    [SerializeField] private AudioSource _breakSound;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,6 +13,8 @@ public class Videocam : MonoBehaviour
 
         if(bullet != null)
         {
+            _breakSound.Play();
+
             Instantiate(_break, transform.position, transform.rotation);
             Destroy(gameObject);
         }

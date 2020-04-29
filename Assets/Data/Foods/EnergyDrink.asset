@@ -19,3 +19,4 @@ MonoBehaviour:
   _food: -0.1
   _happy: 0.1
   _price: 150
+  _isWater: 1

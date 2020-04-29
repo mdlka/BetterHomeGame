@@ -3,9 +3,15 @@ using UnityEngine.UI;
 
 public class InteractionWithFridge : MonoBehaviour
 {
+    [Header("Menu")]
     [SerializeField] private GameObject _fridgeMenu;
+
+    [Header("Button")]
     [SerializeField] private GameObject _fridgeButton;
     [SerializeField] private Text _text;
+
+    [Header("Sound")]
+    [SerializeField] AudioSource _clickSound;
 
     private void Awake()
     {
@@ -29,6 +35,8 @@ public class InteractionWithFridge : MonoBehaviour
 
     public void FridgeButton()
     {
+        _clickSound.Play();
+
         if (_fridgeMenu.activeSelf == false)
         {
             CloseOrOpenMenu("Закрыть", true);

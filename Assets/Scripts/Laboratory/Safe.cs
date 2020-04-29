@@ -8,37 +8,29 @@ public class Safe : MonoBehaviour
     [Header("Password")]
     [SerializeField] private string _password;
 
+    [Header("Sound")]
+    [SerializeField] AudioSource _safeSound;
+    [SerializeField] AudioClip _click;
+    [SerializeField] AudioClip _beatOffBullet;
+
     [Header("Other")]
     [SerializeField] private GameObject _winPanel;
-    [SerializeField] private GameObject _passwordPanel;
     [SerializeField] private InputField _input;
-
-    private void Awake()
-    {
-        _passwordPanel.SetActive(false);
-    }
 
     public void BeatOffBullet(ParticleSystem sparks)
     {
+        _safeSound.pitch = Random.Range(0.9f, 1.1f);
+        _safeSound.PlayOneShot(_beatOffBullet);
         Destroy(sparks.gameObject, sparks.main.startLifetimeMultiplier);
     }
 
     public void VerifyPassword()
     {
-        if(_input.text.ToLower() == _password.ToLower())
+        _safeSound.PlayOneShot(_click);
+
+        if (_input.text.ToLower() == _password.ToLower())
         {
-            Debug.Log("true");
             _winPanel.SetActive(true);
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Player player = collision.GetComponent<Player>();
-
-        if(player != null)
-        {
-            _passwordPanel.SetActive(true);
         }
     }
 }

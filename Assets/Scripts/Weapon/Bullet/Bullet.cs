@@ -27,7 +27,7 @@ public class Bullet : MonoBehaviour
         if (enemy != null)
         {
             ParticleSystem blood = Instantiate(_blood, transform.position, _blood.transform.rotation);
-            enemy.TakeDamage(_damage, blood);      
+            enemy.TakeDamage(_damage, blood, true);      
         }
         else if(player != null)
         {

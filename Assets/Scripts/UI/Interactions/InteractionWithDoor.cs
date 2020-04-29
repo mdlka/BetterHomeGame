@@ -5,10 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class InteractionWithDoor : MonoBehaviour
 {
+    [Header("Button")]
     [SerializeField] private GameObject _doorButton;
     [SerializeField] private GameObject _textTakeKnife;
+
+    [Header("Knife")]
     [SerializeField] private InteractionWithKnife _knife;
 
+    [Header("Sound")]
+    [SerializeField] AudioSource _clickSound;
+    
+    [Header("Save")]
     [SerializeField] private SaveAndLoadHome _save;
 
     private void Awake()
@@ -41,6 +48,8 @@ public class InteractionWithDoor : MonoBehaviour
 
     public void DoorButton()
     {
+        _clickSound.Play();
+
         _save.SaveAll();
         SceneManager.LoadScene(2);
     }

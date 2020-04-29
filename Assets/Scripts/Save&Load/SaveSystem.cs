@@ -29,7 +29,17 @@ public class SaveSystem : MonoBehaviour
 
     public void DeleteSave()
     {
-        PlayerPrefs.DeleteAll();
+        SetGameExists(false);
+        SetIndicators(1f, 1f, 1f, 1f, 500);
+        SetPlayerPosition(new Vector3(-23.8f, -1.36f, 0f));
+        SetIsKnifeInArm(false);
+        SetDay(30);
+        SetScene(1);
+        SetFoods(null);
+        SetHaveGun(false);
+        SetAmmoValue(0);
+
+        SaveGame();
     }
 
     public void SetGameExists(bool gameExists)
@@ -81,6 +91,21 @@ public class SaveSystem : MonoBehaviour
         _save.ammoValue = value;
     }
 
+    public void SetPostProcess(bool postProcess)
+    {
+        _save.postProcess = postProcess;
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        _save.musicVolume = volume;
+    }
+
+    public void SetSoundVolume(float volume)
+    {
+        _save.soundVolume = volume;
+    }
+
     public bool GetGameExists() { return _save.gameExists; }
 
     public float GetHealth() { return _save.health; }
@@ -99,6 +124,10 @@ public class SaveSystem : MonoBehaviour
 
     public bool GetHaveGun() { return _save.haveGun; }
     public int GetAmmoValue() { return _save.ammoValue; }
+
+    public bool GetPostProcess() { return _save.postProcess; }
+    public float GetMusicVolume() { return _save.musicVolume; }
+    public float GetSoundVolume() { return _save.soundVolume; }
 }
 
 [Serializable]
@@ -121,4 +150,8 @@ public class Save
     public int ammoValue;
 
     public int scene;
+
+    public bool postProcess = true;
+    public float musicVolume = 1f;
+    public float soundVolume = 1f;
 }

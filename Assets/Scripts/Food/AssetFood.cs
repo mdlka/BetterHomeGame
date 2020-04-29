@@ -12,6 +12,7 @@ public class AssetFood : ScriptableObject, IFood
     public float Food => _food;
     public float Happy => _happy;
     public int Price => _price;
+    public bool isWater => _isWater;
 
     [SerializeField] private Sprite _uiIcon;
     [SerializeField] private string _name;
@@ -20,4 +21,5 @@ public class AssetFood : ScriptableObject, IFood
     [SerializeField] private float _food;
     [SerializeField] private float _happy;
     [SerializeField] private int _price;
+    [SerializeField] private bool _isWater;
 }

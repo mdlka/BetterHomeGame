@@ -5,4 +5,6 @@ using UnityEngine;
 public abstract class SaveAndLoad : MonoBehaviour
 {
     public abstract void SaveAll();
+
+    public abstract void DeleteSave();
 }
