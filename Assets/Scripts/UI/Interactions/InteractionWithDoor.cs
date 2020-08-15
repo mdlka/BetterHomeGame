@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class InteractionWithDoor : MonoBehaviour
 {
@@ -14,7 +13,10 @@ public class InteractionWithDoor : MonoBehaviour
 
     [Header("Sound")]
     [SerializeField] AudioSource _clickSound;
-    
+
+    [Header("Load")]
+    [SerializeField] LevelLoader _load;
+
     [Header("Save")]
     [SerializeField] private SaveAndLoadHome _save;
 
@@ -51,6 +53,6 @@ public class InteractionWithDoor : MonoBehaviour
         _clickSound.Play();
 
         _save.SaveAll();
-        SceneManager.LoadScene(2);
+        _load.LoadLevel(2);
     }
 }

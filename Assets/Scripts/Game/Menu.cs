@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
@@ -11,6 +10,9 @@ public class Menu : MonoBehaviour
 
     [Header("Sound")]
     [SerializeField] AudioSource _clickSound;
+
+    [Header("Load")]
+    [SerializeField] LevelLoader _load;
 
     [Header("Save")]
     [SerializeField] private SaveAndLoadMenu _saveMenu;
@@ -34,7 +36,7 @@ public class Menu : MonoBehaviour
 
         if (_save.GetGameExists())
         {
-            SceneManager.LoadScene(_save.GetScene());
+            _load.LoadLevel(_save.GetScene());
         }
     }
 
@@ -43,7 +45,7 @@ public class Menu : MonoBehaviour
         _clickSound.Play();
 
         _save.DeleteSave();
-        SceneManager.LoadScene(1);
+        _load.LoadLevel(1);
     }
 
     public void OpenSetting()

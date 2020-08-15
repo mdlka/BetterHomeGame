@@ -4237,6 +4237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clickSound: {fileID: 918299402}
+  _load: {fileID: 110229628}
   _save: {fileID: 365052143}
 --- !u!114 &918299400
 MonoBehaviour:
@@ -8052,6 +8053,7 @@ MonoBehaviour:
   _pausePanel: {fileID: 1382534580}
   _settingPanel: {fileID: 680677193}
   _clickSound: {fileID: 1516350379}
+  _load: {fileID: 110229628}
   _save: {fileID: 365052143}
 --- !u!82 &1516350379
 AudioSource:
@@ -8617,6 +8619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c0456788f6568345b36a71c2dc08db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _load: {fileID: 110229628}
   _save: {fileID: 365052143}
 --- !u!1001 &1659472545
 PrefabInstance:

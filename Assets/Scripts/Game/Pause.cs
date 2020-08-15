@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
@@ -11,6 +10,9 @@ public class Pause : MonoBehaviour
 
     [Header("Sound")]
     [SerializeField] AudioSource _clickSound;
+
+    [Header("Load")]
+    [SerializeField] LevelLoader _load;
 
     [Header("Save")]
     [SerializeField] private SaveAndLoad _save;
@@ -61,6 +63,6 @@ public class Pause : MonoBehaviour
         _clickSound.Play();
 
         _save.SaveAll();
-        SceneManager.LoadScene(0);
+        _load.LoadLevel(0);
     }
 }

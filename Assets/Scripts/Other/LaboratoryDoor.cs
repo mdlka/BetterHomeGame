@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class LaboratoryDoor : MonoBehaviour
 {
+    [Header("Load")]
+    [SerializeField] LevelLoader _load;
+
+    [Header("Save")]
     [SerializeField] private SaveAndLoadStreet _save;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -14,7 +17,7 @@ public class LaboratoryDoor : MonoBehaviour
         if(player != null)
         {
             _save.SaveAll();
-            SceneManager.LoadScene(3);
+            _load.LoadLevel(3);
         }
     }
 }
